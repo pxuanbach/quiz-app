@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "cross-env next build",
+    "start": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next start"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -13,7 +13,7 @@
     "axios": "^0.21.1",
     "cross-env": "^7.0.3",
     "next": "^14.2.3",
-    "next-auth": "^3.29.0",
+    "next-auth": "^4.24.7",
     "next-images": "^1.7.0",
     "nookies": "^2.5.2",
     "postcss": "^8.4.38",
@@ -31,7 +31,7 @@
     "@types/styled-components": "^5.1.7",
     "@typescript-eslint/eslint-plugin": "^4.14.2",
     "@typescript-eslint/parser": "^4.14.2",
-    "babel-plugin-inline-react-svg": "^1.1.2",
+    "babel-plugin-inline-react-svg": "^2.0.2",
     "eslint": "^7.19.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",
